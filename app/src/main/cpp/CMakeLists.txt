@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.22)
+project(feedbackintel LANGUAGES CXX)
+set(CMAKE_CXX_STANDARD 17)
+add_library(feedbackintel SHARED feedback_intel_web.cpp)
+target_link_libraries(feedbackintel log android)
